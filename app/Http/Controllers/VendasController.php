@@ -86,9 +86,4 @@ public function realizarVenda(): JsonResponse
         echo json_encode($response);
     }
 
-public function updatePayment(Request $request)
-{
-    \Log::info('Card response', $data); // $data = array ou json que você vai devolver
-return response()->json($data);
-}
 }

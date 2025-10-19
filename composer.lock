@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2a7aa61aa007d5217ac110512df261f",
+    "content-hash": "c7e33172dcf8e43d5a5e4c749001dbf9",
     "packages": [
         {
             "name": "brick/math",
@@ -2052,6 +2052,72 @@
                 "source": "https://github.com/livepixel/mercado-pago/tree/1.0.1"
             },
             "time": "2015-06-24T00:49:19+00:00"
+        },
+        {
+            "name": "lsnepomuceno/laravel-brazilian-ceps",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lsnepomuceno/laravel-brazilian-ceps.git",
+                "reference": "8125c97e80ced397aebbb239e1d39e1c75701ebb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lsnepomuceno/laravel-brazilian-ceps/zipball/8125c97e80ced397aebbb239e1d39e1c75701ebb",
+                "reference": "8125c97e80ced397aebbb239e1d39e1c75701ebb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7",
+                "illuminate/http": "^9 || ^10 || ^11 || ^12",
+                "illuminate/support": "^9 || ^10 || ^11 || ^12",
+                "php": ">=8.1 <8.5"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^6 || ^7 || ^8",
+                "orchestra/testbench": "^7 || ^8 || ^9 || ^10"
+            },
+            "suggest": {
+                "lsnepomuceno/laravel-a1-pdf-sign": "Sign PDF files with valid x509 certificates."
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LSNepomuceno\\LaravelBrazilianCeps\\LaravelBrazilianCepsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LSNepomuceno\\LaravelBrazilianCeps\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "lsnepomuceno",
+                    "email": "lsn.nepomuceno@gmail.com"
+                }
+            ],
+            "description": "A package for querying zip codes for Brazilian addresses.",
+            "keywords": [
+                "brazil",
+                "ceps",
+                "correios",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/lsnepomuceno/laravel-brazilian-ceps/issues",
+                "source": "https://github.com/lsnepomuceno/laravel-brazilian-ceps/tree/1.1.0"
+            },
+            "time": "2025-03-22T18:34:57+00:00"
         },
         {
             "name": "mercadopago/dx-php",

@@ -10,6 +10,7 @@
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livepixel/mercado-pago": "^1.0",
+        "lsnepomuceno/laravel-brazilian-ceps": "^1.1",
         "mercadopago/dx-php": "3.6.0"
     },
     "require-dev": {

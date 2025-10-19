@@ -23,14 +23,15 @@ class ApiMercadoPago
         $this->_client = new PreferenceClient();
         $this->_options = new RequestOptions();
         $this->payer = new PaymentClient();
+        $token = env('MP_ACCESS_TOKEN');
 
-        if (!env('MP_ACCESS_TOKEN')) {
+        if (!$token) {
             throw new \Exception('MP_ACCESS_TOKEN não encontrado no .env');
         }
         MercadoPagoConfig::setAccessToken(env('MP_ACCESS_TOKEN'));
     }
 
-    public function salvarVenda(array $data): mixed
+   public function salvarVenda(array $data): mixed
 {
     $this->_options->setCustomHeaders(["X-Idempotency-Key: " . uniqid()]);
 
@@ -55,7 +56,7 @@ class ApiMercadoPago
             "failure" => $successUrl,
             "pending" => $successUrl
         ],
-        "auto_return" => "all", // 🔹 todos os status
+        "auto_return" => "approved", // 🔹 só aprovado
     ];
 
     try {
